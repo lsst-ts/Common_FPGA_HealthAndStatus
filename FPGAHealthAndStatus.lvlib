@@ -5,9 +5,10 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="DataTypes" Type="Folder">
+		<Item Name="HealthAndStatusSettings.ctl" Type="VI" URL="../DataTypes/HealthAndStatusSettings.ctl"/>
 		<Item Name="HealthAndStatusUpdate.ctl" Type="VI" URL="../DataTypes/HealthAndStatusUpdate.ctl"/>
 		<Item Name="HealthAndStatusUpdateMode.ctl" Type="VI" URL="../DataTypes/HealthAndStatusUpdateMode.ctl"/>
-		<Item Name="QueryHealthAndStatusLoop.ctl" Type="VI" URL="../DataTypes/QueryHealthAndStatusLoop.ctl"/>
+		<Item Name="QueryHealthAndStatusLoopData.ctl" Type="VI" URL="../DataTypes/QueryHealthAndStatusLoopData.ctl"/>
 		<Item Name="QueryHealthAndStatusStates.ctl" Type="VI" URL="../DataTypes/QueryHealthAndStatusStates.ctl"/>
 	</Item>
 	<Item Name="Support" Type="Folder">
