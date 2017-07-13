@@ -5,6 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="DataTypes" Type="Folder">
+		<Item Name="HealthAndStatusFIFOCopySettings.ctl" Type="VI" URL="../DataTypes/HealthAndStatusFIFOCopySettings.ctl"/>
 		<Item Name="HealthAndStatusSettings.ctl" Type="VI" URL="../DataTypes/HealthAndStatusSettings.ctl"/>
 		<Item Name="HealthAndStatusUpdate.ctl" Type="VI" URL="../DataTypes/HealthAndStatusUpdate.ctl"/>
 		<Item Name="HealthAndStatusUpdateMode.ctl" Type="VI" URL="../DataTypes/HealthAndStatusUpdateMode.ctl"/>
@@ -15,8 +16,9 @@
 		<Item Name="ClearHealthAndStatusMemory.vi" Type="VI" URL="../Support/ClearHealthAndStatusMemory.vi"/>
 		<Item Name="ProcessHealthAndStatusUpdates.vi" Type="VI" URL="../Support/ProcessHealthAndStatusUpdates.vi"/>
 		<Item Name="QueryHealthAndStatus.vi" Type="VI" URL="../Support/QueryHealthAndStatus.vi"/>
-		<Item Name="UpdateHealthAndStatus.vi" Type="VI" URL="../Support/UpdateHealthAndStatus.vi"/>
 	</Item>
 	<Item Name="HealthAndStatus.vi" Type="VI" URL="../HealthAndStatus.vi"/>
+	<Item Name="HealthAndStatusFIFOCopy.vi" Type="VI" URL="../HealthAndStatusFIFOCopy.vi"/>
 	<Item Name="README.txt" Type="Document" URL="../README.txt"/>
+	<Item Name="UpdateHealthAndStatus.vi" Type="VI" URL="../UpdateHealthAndStatus.vi"/>
 </Library>
