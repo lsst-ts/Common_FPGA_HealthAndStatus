@@ -1,4 +1,4 @@
-# Health and Status Labview library
+# Health and Status LabView library
 
 This library allows storage of performance metric generated inside
 [SCTL](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000P8sWSAS&l=en-US).
@@ -16,7 +16,7 @@ address, update mode (see below) and data.
 
 In the following table:
 
-* **M** - Memory value at **address base + offset**
+* **M** - memory value at **address base + offset**
 * **D** - provided data
 
  Command  | Operation
@@ -24,8 +24,8 @@ In the following table:
  Set      | M = D
  Add      | M += D 
  Subtract | M -= D
- Or       | M = M | D *(bitwise or)*
- Not And  | M = M & (!D) *(bitwise; clears bit set with Or)*
+ Or       | M = M or D *(bitwise or)*
+ Not And  | M = M and (not D) *(bitwise; clears bit set with Or)*
  
 
 :warning: You cannot write to commanding FIFO from two different loops. If
@@ -105,9 +105,9 @@ When record in the memory shall be created wire into
 
 :loudspeaker: this will operate on memory cell address **Base address + Offset**
 
-For example, when counting operations, use *Add* operation with data 1 to
-increase counters. If working with bite flags (set/clear), use *Or* and *Not
-And* with bite masks.
+For example, if counting something, use *Add* operation with data 1 to increase
+a counter. If working with bite flags (bits set/clear), use *Or* and *Not And*
+with bite masks.
 
 ## Requesting data
 
